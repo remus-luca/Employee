@@ -1,14 +1,20 @@
-import { AfterViewInit, Component, OnInit, ViewChild } from '@angular/core';
+import { Component, OnInit, ViewChild } from '@angular/core';
+import { FormBuilder, FormGroup } from '@angular/forms';
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss'],
 })
-export class AppComponent implements OnInit, AfterViewInit {
-  ngOnInit(): void {}
+export class AppComponent implements OnInit {
+  employeeForm: FormGroup;
+
   title = 'Employee';
   @ViewChild('tempButton') buttontemp: any;
+
+  constructor(private fb: FormBuilder) {
+    this.employeeForm = fb.group({});
+  }
 
   educationOptions = [
     '10th pass',
@@ -18,7 +24,16 @@ export class AppComponent implements OnInit, AfterViewInit {
     'PhD',
   ];
 
-  ngAfterViewInit(): void {
-    this.buttontemp.nativeElement.click();
+  ngOnInit(): void {
+    this.employeeForm = this.fb.group({
+      firstname: this.fb.control(''),
+      lastname: this.fb.control(''),
+      birthday: this.fb.control(''),
+      gender: this.fb.control(''),
+      education: this.fb.control('default'),
+      company: this.fb.control(''),
+      jobExperience: this.fb.control(''),
+      salary: this.fb.control(''),
+    });
   }
 }

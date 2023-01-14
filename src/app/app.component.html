@@ -3,7 +3,8 @@
   <div class="toolbar">
     <div class="add-employee">
 
-      <button type="button" class="btn btn-outline-success btn-lg">Add Employee</button>
+      <button type="button" class="btn btn-outline-success btn-lg" data-bs-toggle="modal" data-bs-target="#exampleModal">Add
+        Employee</button>
     </div>
 
     <div class="search-employees">
@@ -24,9 +25,6 @@
     </div>
 
 
-    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-      Launch demo modal
-    </button>
 
 
     <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -37,7 +35,7 @@
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <div class="modal-body">
-          <form>
+          <form [formGroup]="employeeForm">
 
             <div class="row">
               <div class="col">
