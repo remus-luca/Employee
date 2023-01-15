@@ -21,4 +21,5 @@ export class EmployeeService {
   deleteEmployee(id: string) {
     return this.http.delete(this.baseUrl + '/' + id);
   }
+
 }

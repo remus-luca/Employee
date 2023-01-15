@@ -9,7 +9,7 @@
       "company": "Google",
       "jobExperience": 20,
       "salary": 50,
-      "profile": "Profile-03.jpg",
+      "profile": "./images/106689818-1599150563582-musk.jpg",
       "id": 1
     },
     {
@@ -21,7 +21,7 @@
       "company": "Microsoft",
       "jobExperience": 25,
       "salary": 50,
-      "profile": "Profile-04.jpg",
+      "profile": "./images/depositphotos_186844318-stock-photo-happy-beautiful-blonde-girl.jpg",
       "id": 4
     },
     {
@@ -33,7 +33,7 @@
       "company": "TCS",
       "jobExperience": 3,
       "salary": 10,
-      "profile": "Profile-05.jpg",
+      "profile": "./images/depositphotos_88370500-stock-photo-mechanic-wearing-overalls.jpg",
       "id": 5
     },
     {
@@ -45,7 +45,7 @@
       "company": "Tudip",
       "jobExperience": 4.5,
       "salary": 9.5,
-      "profile": "Profile-01.jpg",
+      "profile": "./images/depositphotos_94816450-stock-photo-portarit-of-teenage-girl.jpg",
       "id": 6
     },
     {
@@ -57,7 +57,7 @@
       "company": "Google",
       "jobExperience": 23,
       "salary": 60,
-      "profile": "Profile-06.jpg",
+      "profile": "./images/images.jfif",
       "id": 7
     },
     {
@@ -69,7 +69,7 @@
       "company": "Accenture",
       "jobExperience": 7.4,
       "salary": 13,
-      "profile": "Profile-04.jpg",
+      "profile": "./images/photo-1438761681033-6461ffad8d80.jfif",
       "id": 8
     },
     {
@@ -81,7 +81,7 @@
       "company": "FIS",
       "jobExperience": 6,
       "salary": 4.9,
-      "profile": "Profile-03.jpg",
+      "profile": "./images/happy-person-portrait-smiling-woman-tanned-skin-curly-hair-happy-person-portrait-smiling-young-friendly-woman-197501184.jpg",
       "id": 9
     },
     {
@@ -93,7 +93,7 @@
       "company": "Google",
       "jobExperience": 12,
       "salary": 35,
-      "profile": "Profile-05.jpg",
+      "profile": "./images/photo-1438761681033-6461ffad8d80.jfif",
       "id": 10
     },
     {
@@ -105,7 +105,7 @@
       "company": "Fiserv",
       "jobExperience": 13,
       "salary": 25,
-      "profile": "Profile-03.jpg",
+      "profile": "./images/photo-1544005313-94ddf0286df2.jfif",
       "id": 11
     }
   ],

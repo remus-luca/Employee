@@ -1,5 +1,6 @@
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { FormBuilder, FormControl, FormGroup } from '@angular/forms';
+import { Employee } from './models/employee.model';
 import { EmployeeService } from './services/employee.service';
 
 @Component({
@@ -9,15 +10,19 @@ import { EmployeeService } from './services/employee.service';
 })
 export class AppComponent implements OnInit {
   employeeForm: FormGroup;
+  employees: Employee[];
+  employeesToDisplay: Employee[];
 
   title = 'Employee';
-  @ViewChild('tempButton') buttontemp: any;
+  @ViewChild('fileInput') fileInput: any;
 
   constructor(
     private fb: FormBuilder,
     private employeeService: EmployeeService
   ) {
     this.employeeForm = fb.group({});
+    this.employees = [];
+    this.employeesToDisplay = this.employees;
   }
 
   educationOptions = [
@@ -39,7 +44,43 @@ export class AppComponent implements OnInit {
       jobExperience: this.fb.control(''),
       salary: this.fb.control(''),
     });
-    this.employeeService.getEmployees().subscribe((res) => {});
+
+    this.employeeService.getEmployees().subscribe((res) => {
+      for (let emp of res) {
+        this.employees.unshift(emp);
+      }
+      this.employeesToDisplay = this.employees;
+    });
+  }
+
+  addEmployee() {
+    let employee: Employee = {
+      firstname: this.FirstName.value,
+      lastname: this.LastName.value,
+      birthdate: this.BirthDay.value,
+      gender: this.Gender.value,
+      education: this.educationOptions[parseInt(this.Education.value)],
+      company: this.Company.value,
+      jobExperience: this.JobExperience.value,
+      salary: this.Salary.value,
+      profile: this.fileInput.nativeElement.files[0]?.name,
+    };
+    this.employeeService.postEmployee(employee).subscribe((res) => {
+      this.employees.unshift(res);
+      this.clearForm();
+    });
+  }
+
+  clearForm() {
+    this.FirstName.setValue('');
+    this.LastName.setValue('');
+    this.BirthDay.setValue('');
+    this.Gender.setValue('');
+    this.Education.setValue('');
+    this.Company.setValue('');
+    this.JobExperience.setValue('');
+    this.Salary.setValue('');
+    this.fileInput.nativeElement.value = '';
   }
 
   public get FirstName(): FormControl {
