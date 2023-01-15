@@ -17,4 +17,8 @@ export class EmployeeService {
   postEmployee(employee: Employee) {
     return this.http.post<Employee>(this.baseUrl, employee);
   }
+
+  deleteEmployee(id: string) {
+    return this.http.delete(this.baseUrl + '/' + id);
+  }
 }
