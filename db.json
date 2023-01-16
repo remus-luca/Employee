@@ -1,116 +1,76 @@
 {
   "posts": [
     {
-      "firstname": "Rohit",
-      "lastname": "Sharma",
+      "firstname": "Dan",
+      "lastname": "Andrei",
       "birthdate": "2022-01-12",
       "gender": "m",
       "education": "post graduate",
       "company": "Google",
       "jobExperience": 20,
       "salary": 50,
-      "profile": "./images/106689818-1599150563582-musk.jpg",
+      "profile": "Profile-03.jpg",
       "id": 1
     },
     {
-      "firstname": "Rohit",
-      "lastname": "Shah",
+      "firstname": "Vasile",
+      "lastname": "Emanuel",
       "birthdate": "1985-09-23",
       "gender": "m",
       "education": "10th pass",
       "company": "Microsoft",
       "jobExperience": 25,
       "salary": 50,
-      "profile": "./images/depositphotos_186844318-stock-photo-happy-beautiful-blonde-girl.jpg",
-      "id": 4
+      "profile": "Profile-04.jpg",
+      "id": 2
     },
     {
-      "firstname": "Amy",
-      "lastname": "Moore",
+      "firstname": "Anton",
+      "lastname": "Maria",
       "birthdate": "2014-07-18",
       "gender": "f",
       "education": "diploma",
       "company": "TCS",
       "jobExperience": 3,
       "salary": 10,
-      "profile": "./images/depositphotos_88370500-stock-photo-mechanic-wearing-overalls.jpg",
-      "id": 5
+      "profile": "Profile-05.jpg",
+      "id": 3
     },
     {
-      "firstname": "Peter ",
-      "lastname": "May",
+      "firstname": "Diaconu ",
+      "lastname": "Mihai",
       "birthdate": "2007-07-06",
       "gender": "m",
       "education": "graduate",
       "company": "Tudip",
       "jobExperience": 4.5,
       "salary": 9.5,
-      "profile": "./images/depositphotos_94816450-stock-photo-portarit-of-teenage-girl.jpg",
-      "id": 6
+      "profile": "Profile-01.jpg",
+      "id": 4
     },
     {
-      "firstname": "Pankaj",
-      "lastname": "Kumar",
+      "firstname": "Viorel",
+      "lastname": "Gheorghe",
       "birthdate": "1978-07-20",
       "gender": "m",
       "education": "PhD",
       "company": "Google",
       "jobExperience": 23,
       "salary": 60,
-      "profile": "./images/images.jfif",
-      "id": 7
+      "profile": "Profile-06.jpg",
+      "id": 5
     },
     {
-      "firstname": "Prathamesh",
-      "lastname": "Shetty",
+      "firstname": "Ion",
+      "lastname": "Manole",
       "birthdate": "1999-06-09",
       "gender": "m",
       "education": "graduate",
       "company": "Accenture",
       "jobExperience": 7.4,
       "salary": 13,
-      "profile": "./images/photo-1438761681033-6461ffad8d80.jfif",
-      "id": 8
-    },
-    {
-      "firstname": "Nikhil",
-      "lastname": "Rane",
-      "birthdate": "1980-05-23",
-      "gender": "m",
-      "education": "post graduate",
-      "company": "FIS",
-      "jobExperience": 6,
-      "salary": 4.9,
-      "profile": "./images/happy-person-portrait-smiling-woman-tanned-skin-curly-hair-happy-person-portrait-smiling-young-friendly-woman-197501184.jpg",
-      "id": 9
-    },
-    {
-      "firstname": "Pooja",
-      "lastname": "Kumari",
-      "birthdate": "1990-08-30",
-      "gender": "f",
-      "education": "graduate",
-      "company": "Google",
-      "jobExperience": 12,
-      "salary": 35,
-      "profile": "./images/photo-1438761681033-6461ffad8d80.jfif",
-      "id": 10
-    },
-    {
-      "firstname": "Yash",
-      "lastname": "Chauhan",
-      "birthdate": "1995-11-24",
-      "gender": "m",
-      "education": "post graduate",
-      "company": "Fiserv",
-      "jobExperience": 13,
-      "salary": 25,
-      "profile": "./images/photo-1544005313-94ddf0286df2.jfif",
-      "id": 11
+      "profile": "Profile-04.jpg",
+      "id": 6
     }
-  ],
-  "comments": [],
-  "profile": {
-    "name": "typicode"
-  }
+  ]
 }

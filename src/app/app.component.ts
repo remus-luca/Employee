@@ -83,6 +83,16 @@ export class AppComponent implements OnInit {
     this.fileInput.nativeElement.value = '';
   }
 
+  removeEmployee(event: any) {
+    this.employees.forEach((val, index) => {
+      if (val.id === parseInt(event)) {
+        this.employeeService.deleteEmployee(event).subscribe((res) => {
+          this.employees.splice(index, 1);
+        });
+      }
+    });
+  }
+
   public get FirstName(): FormControl {
     return this.employeeForm.get('firstname') as FormControl;
   }
