@@ -9,7 +9,7 @@ import { Employee } from 'src/app/models/employee.model';
 export class EmployeeComponent implements OnInit {
   @Input() employee: Employee;
   @Output() onRemoveEmployee = new EventEmitter<number>();
-
+  @Output() onEditEmployee = new EventEmitter<number>();
   constructor() {
     this.employee = {
       firstname: '',
@@ -28,5 +28,9 @@ export class EmployeeComponent implements OnInit {
 
   deleteEmployeeClicked() {
     this.onRemoveEmployee.emit(this.employee.id);
+  }
+
+  editEmployeeClicked() {
+    this.onEditEmployee.emit(this.employee.id);
   }
 }

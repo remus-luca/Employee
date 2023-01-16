@@ -93,6 +93,8 @@ export class AppComponent implements OnInit {
     });
   }
 
+  editEmployee(event: any) {}
+
   public get FirstName(): FormControl {
     return this.employeeForm.get('firstname') as FormControl;
   }
