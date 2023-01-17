@@ -9,7 +9,8 @@
         </div>
 
       <div class="search-employees">
-        <input type="search" class="form-control" placeholder="Search Employees">
+        <input type="search" class="form-control" placeholder="Search Employees" (input)="searchEmployees(searchInput.value)"
+          #searchInput>
       </div>
     </div>
     <div class="employees ">
