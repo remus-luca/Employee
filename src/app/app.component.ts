@@ -15,6 +15,7 @@ export class AppComponent implements OnInit {
 
   title = 'Employee';
   @ViewChild('fileInput') fileInput: any;
+  @ViewChild('addEmployeeButton') addEmployeeButton: any;
 
   constructor(
     private fb: FormBuilder,
@@ -93,7 +94,33 @@ export class AppComponent implements OnInit {
     });
   }
 
-  editEmployee(event: any) {}
+  editEmployee(event: any) {
+    this.employees.forEach((val, ind) => {
+      if (val.id === event) {
+        this.setForm(val);
+      }
+    });
+    this.removeEmployee(event);
+    this.addEmployeeButton.nativeElement.click();
+  }
+
+  setForm(emp: Employee) {
+    this.FirstName.setValue(emp.firstname);
+    this.LastName.setValue(emp.lastname);
+    this.BirthDay.setValue(emp.birthdate);
+    this.Gender.setValue(emp.gender);
+
+    let educationIndex = 0;
+    this.educationOptions.forEach((val, index) => {
+      if (val === emp.education) educationIndex = index;
+    });
+    this.Education.setValue(educationIndex);
+
+    this.Company.setValue(emp.company);
+    this.JobExperience.setValue(emp.jobExperience);
+    this.Salary.setValue(emp.salary);
+    this.fileInput.nativeElement.value = '';
+  }
 
   public get FirstName(): FormControl {
     return this.employeeForm.get('firstname') as FormControl;
